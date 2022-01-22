@@ -7,22 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D2D1BC3279C67EE002AADC9 /* AddArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2D1BC2279C67EE002AADC9 /* AddArtistView.swift */; };
+		1D2D1BC5279C6CC7002AADC9 /* FavsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2D1BC4279C6CC7002AADC9 /* FavsViewModel.swift */; };
 		1DEC9C3C2798198A0042B5D4 /* SongsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEC9C3B2798198A0042B5D4 /* SongsApp.swift */; };
 		1DEC9C3E2798198A0042B5D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEC9C3D2798198A0042B5D4 /* ContentView.swift */; };
 		1DEC9C402798198B0042B5D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DEC9C3F2798198B0042B5D4 /* Assets.xcassets */; };
 		1DEC9C432798198B0042B5D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DEC9C422798198B0042B5D4 /* Preview Assets.xcassets */; };
-		1DEC9C452798198B0042B5D4 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEC9C442798198B0042B5D4 /* Persistence.swift */; };
+		1DEC9C452798198B0042B5D4 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEC9C442798198B0042B5D4 /* DBManager.swift */; };
 		1DEC9C482798198B0042B5D4 /* Songs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1DEC9C462798198B0042B5D4 /* Songs.xcdatamodeld */; };
+		1DEC9C53279823680042B5D4 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEC9C52279823680042B5D4 /* TabBar.swift */; };
+		1DEC9C58279824020042B5D4 /* SongDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEC9C57279824020042B5D4 /* SongDetailView.swift */; };
+		1DEC9C5A279824510042B5D4 /* FavsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEC9C59279824510042B5D4 /* FavsView.swift */; };
+		1DEC9C5C279824610042B5D4 /* SongsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEC9C5B279824610042B5D4 /* SongsView.swift */; };
+		1DEC9C5F279828500042B5D4 /* AddSongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEC9C5E279828500042B5D4 /* AddSongView.swift */; };
+		1DEC9C6327982DE60042B5D4 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEC9C6227982DE60042B5D4 /* RatingView.swift */; };
+		1DEC9C65279844B20042B5D4 /* SongViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEC9C64279844B20042B5D4 /* SongViewModel.swift */; };
+		1DEC9C672798473E0042B5D4 /* AddSongViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEC9C662798473E0042B5D4 /* AddSongViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D2D1BC2279C67EE002AADC9 /* AddArtistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArtistView.swift; sourceTree = "<group>"; };
+		1D2D1BC4279C6CC7002AADC9 /* FavsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavsViewModel.swift; sourceTree = "<group>"; };
 		1DEC9C382798198A0042B5D4 /* Songs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Songs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DEC9C3B2798198A0042B5D4 /* SongsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsApp.swift; sourceTree = "<group>"; };
 		1DEC9C3D2798198A0042B5D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1DEC9C3F2798198B0042B5D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DEC9C422798198B0042B5D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1DEC9C442798198B0042B5D4 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		1DEC9C442798198B0042B5D4 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		1DEC9C472798198B0042B5D4 /* Songs.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Songs.xcdatamodel; sourceTree = "<group>"; };
+		1DEC9C52279823680042B5D4 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		1DEC9C57279824020042B5D4 /* SongDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailView.swift; sourceTree = "<group>"; };
+		1DEC9C59279824510042B5D4 /* FavsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavsView.swift; sourceTree = "<group>"; };
+		1DEC9C5B279824610042B5D4 /* SongsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsView.swift; sourceTree = "<group>"; };
+		1DEC9C5E279828500042B5D4 /* AddSongView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSongView.swift; sourceTree = "<group>"; };
+		1DEC9C6227982DE60042B5D4 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		1DEC9C64279844B20042B5D4 /* SongViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongViewModel.swift; sourceTree = "<group>"; };
+		1DEC9C662798473E0042B5D4 /* AddSongViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSongViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +75,14 @@
 		1DEC9C3A2798198A0042B5D4 /* Songs */ = {
 			isa = PBXGroup;
 			children = (
-				1DEC9C3B2798198A0042B5D4 /* SongsApp.swift */,
+				1DEC9C56279823F30042B5D4 /* SongDetail */,
+				1DEC9C55279823D50042B5D4 /* Favorites */,
+				1DEC9C54279823CC0042B5D4 /* Songs */,
+				1DEC9C51279822D30042B5D4 /* Managers */,
+				1DEC9C4F27981C3B0042B5D4 /* Main */,
+				1DEC9C5027981C610042B5D4 /* Models */,
+				1DEC9C4E27981C230042B5D4 /* Ressources */,
 				1DEC9C3D2798198A0042B5D4 /* ContentView.swift */,
-				1DEC9C3F2798198B0042B5D4 /* Assets.xcassets */,
-				1DEC9C442798198B0042B5D4 /* Persistence.swift */,
-				1DEC9C462798198B0042B5D4 /* Songs.xcdatamodeld */,
 				1DEC9C412798198B0042B5D4 /* Preview Content */,
 			);
 			path = Songs;
@@ -71,6 +94,77 @@
 				1DEC9C422798198B0042B5D4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1DEC9C4E27981C230042B5D4 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				1DEC9C3F2798198B0042B5D4 /* Assets.xcassets */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		1DEC9C4F27981C3B0042B5D4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1DEC9C3B2798198A0042B5D4 /* SongsApp.swift */,
+				1DEC9C52279823680042B5D4 /* TabBar.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1DEC9C5027981C610042B5D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1DEC9C462798198B0042B5D4 /* Songs.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1DEC9C51279822D30042B5D4 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1DEC9C442798198B0042B5D4 /* DBManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		1DEC9C54279823CC0042B5D4 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				1DEC9C6227982DE60042B5D4 /* RatingView.swift */,
+				1DEC9C5D279828410042B5D4 /* Add */,
+				1DEC9C5B279824610042B5D4 /* SongsView.swift */,
+				1DEC9C64279844B20042B5D4 /* SongViewModel.swift */,
+			);
+			path = Songs;
+			sourceTree = "<group>";
+		};
+		1DEC9C55279823D50042B5D4 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				1DEC9C59279824510042B5D4 /* FavsView.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		1DEC9C56279823F30042B5D4 /* SongDetail */ = {
+			isa = PBXGroup;
+			children = (
+				1DEC9C57279824020042B5D4 /* SongDetailView.swift */,
+			);
+			path = SongDetail;
+			sourceTree = "<group>";
+		};
+		1DEC9C5D279828410042B5D4 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				1DEC9C5E279828500042B5D4 /* AddSongView.swift */,
+				1DEC9C662798473E0042B5D4 /* AddSongViewModel.swift */,
+				1D2D1BC2279C67EE002AADC9 /* AddArtistView.swift */,
+				1D2D1BC4279C6CC7002AADC9 /* FavsViewModel.swift */,
+			);
+			path = Add;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,10 +237,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DEC9C6327982DE60042B5D4 /* RatingView.swift in Sources */,
+				1DEC9C65279844B20042B5D4 /* SongViewModel.swift in Sources */,
 				1DEC9C482798198B0042B5D4 /* Songs.xcdatamodeld in Sources */,
-				1DEC9C452798198B0042B5D4 /* Persistence.swift in Sources */,
+				1DEC9C672798473E0042B5D4 /* AddSongViewModel.swift in Sources */,
+				1DEC9C452798198B0042B5D4 /* DBManager.swift in Sources */,
 				1DEC9C3E2798198A0042B5D4 /* ContentView.swift in Sources */,
+				1DEC9C58279824020042B5D4 /* SongDetailView.swift in Sources */,
 				1DEC9C3C2798198A0042B5D4 /* SongsApp.swift in Sources */,
+				1D2D1BC5279C6CC7002AADC9 /* FavsViewModel.swift in Sources */,
+				1DEC9C5A279824510042B5D4 /* FavsView.swift in Sources */,
+				1DEC9C53279823680042B5D4 /* TabBar.swift in Sources */,
+				1DEC9C5C279824610042B5D4 /* SongsView.swift in Sources */,
+				1D2D1BC3279C67EE002AADC9 /* AddArtistView.swift in Sources */,
+				1DEC9C5F279828500042B5D4 /* AddSongView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +389,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,6 +419,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
