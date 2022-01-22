@@ -27,7 +27,8 @@ struct FavsView: View {
 							Spacer()
 							Text(song.artist?.firstName ?? "No Artist")
 						}
-					}.onDelete { offsets in
+					}
+					.onDelete { offsets in
 						viewModel.deleteSongs(at: offsets)
 					}
 				}

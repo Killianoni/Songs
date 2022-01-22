@@ -9,9 +9,9 @@ import CoreData
 
 struct DBManager {
 	static let shared = DBManager()
-
+	
 	let container: NSPersistentContainer
-
+	
 	init(inMemory: Bool = false) {
 		container = NSPersistentContainer(name: "Songs")
 		if inMemory {
@@ -24,17 +24,17 @@ struct DBManager {
 			}
 		})
 	}
-
-
+	
+	
 	// MARK: - Songs
-
+	
 	func getAllSongs() -> Result<[Song], Error> {
 		let fetchRequest = Song.fetchRequest()
 		let descriptor: NSSortDescriptor = NSSortDescriptor(key: "releaseDate", ascending: true)
-
+		
 		fetchRequest.sortDescriptors = [descriptor]
 		let context = container.viewContext
-
+		
 		do {
 			let songs = try context.fetch(fetchRequest)
 			return .success(songs)
@@ -46,11 +46,11 @@ struct DBManager {
 	func getFavsSongs() -> Result<[Song], Error> {
 		let fetchRequest = Song.fetchRequest()
 		let descriptor: NSSortDescriptor = NSSortDescriptor(key: "releaseDate", ascending: true)
-
+		
 		fetchRequest.sortDescriptors = [descriptor]
 		let context = container.viewContext
 		fetchRequest.predicate = NSPredicate(format: "isFavorite == true")
-
+		
 		do {
 			let songs = try context.fetch(fetchRequest)
 			return .success(songs)
@@ -58,7 +58,7 @@ struct DBManager {
 			return .failure(error)
 		}
 	}
-
+	
 	func getSong(by id: NSManagedObjectID) -> Result<Song, Error> {
 		let context = container.viewContext
 		do {
@@ -68,8 +68,8 @@ struct DBManager {
 			return .failure(error)
 		}
 	}
-
-
+	
+	
 	func addSong(
 		title: String,
 		rate: Int64,
@@ -78,9 +78,9 @@ struct DBManager {
 		lyrics: String?,
 		coverURL: URL?
 	) -> Result<Song, Error> {
-
+		
 		let context = container.viewContext
-
+		
 		// ⚠️ ARTIST -- DUMMY DATA
 		// A DEGAGER
 		let artistsRes = getAllArtists()
@@ -89,7 +89,7 @@ struct DBManager {
 		case .failure: artist = nil
 		case .success(let artists): artist = artists.first
 		}
-
+		
 		let song = Song(entity: Song.entity(),
 						insertInto: DBManager.shared.container.viewContext)
 		song.title = title
@@ -100,7 +100,7 @@ struct DBManager {
 		song.lyrics = lyrics
 		// Relation
 		song.artist = artist
-
+		
 		do {
 			try context.save()
 			return .success(song)
@@ -108,11 +108,11 @@ struct DBManager {
 			return .failure(error)
 		}
 	}
-
+	
 	@discardableResult
 	func deleteSong(by id: NSManagedObjectID) -> Result<Void, Error> {
 		let context = container.viewContext
-
+		
 		do {
 			let song = try context.existingObject(with: id)
 			context.delete(song)
@@ -123,23 +123,25 @@ struct DBManager {
 		}
 	}
 	
-	@discardableResult
-	func addFavSong(by id: NSManagedObjectID) -> Result<Void, Error> {
-		let context = container.viewContext
-
-		do {
-			let song = try context.existingObject(with: id)
-			context.delete(song)
-			try context.save()
-			return .success(())
-		} catch {
-			return .failure(error)
-		}
-	}
+	//	@discardableResult
+	//	func addFavSong(by id: NSManagedObjectID) -> Result<Void, Error> {
+	//		let context = container.viewContext
+	//
+	//		do {
+	//			let song = try context.existingObject(with: id)
+	//			if song.isFavorite == true {
+	//				song.isFavorite
+	//			}
+	//			try context.save()
+	//			return .success(())
+	//		} catch {
+	//			return .failure(error)
+	//		}
+	//	}
 	
-
+	
 	// MARK: - Artist
-
+	
 	func addDefaultArtist() {
 		let artistsResult = getAllArtists()
 		let context = container.viewContext
@@ -160,11 +162,11 @@ struct DBManager {
 			}
 		}
 	}
-
+	
 	func getAllArtists() -> Result<[Artist], Error> {
 		let fetchRequest = Artist.fetchRequest()
 		let context = container.viewContext
-
+		
 		do {
 			let artists = try context.fetch(fetchRequest)
 			return .success(artists)
@@ -173,6 +175,45 @@ struct DBManager {
 		}
 	}
 	
+	@discardableResult
+	func deleteArtist(by id: NSManagedObjectID) -> Result<Void, Error> {
+		let context = container.viewContext
+		
+		do {
+			let artist = try context.existingObject(with: id)
+			context.delete(artist)
+			try context.save()
+			return .success(())
+		} catch {
+			return .failure(error)
+		}
+	}
+	
+	func addArtist(
+		firstName: String,
+		lastName: String,
+		coverURL: URL?
+	) -> Result<Artist, Error> {
+		
+		let context = container.viewContext
+		
+		let artist = Artist(entity: Artist.entity(),
+							insertInto: DBManager.shared.container.viewContext)
+		artist.firstName = firstName
+		artist.lastName = lastName
+		artist.coverURL = coverURL
+		// Relation
+		
+		do {
+			try context.save()
+			return .success(artist)
+		} catch {
+			return .failure(error)
+		}
+	}
+	
+	
 }
+
 
 

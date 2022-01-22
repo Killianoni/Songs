@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1D2D1BC3279C67EE002AADC9 /* AddArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2D1BC2279C67EE002AADC9 /* AddArtistView.swift */; };
 		1D2D1BC5279C6CC7002AADC9 /* FavsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2D1BC4279C6CC7002AADC9 /* FavsViewModel.swift */; };
+		1D2D1BC7279C7957002AADC9 /* AddArtistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2D1BC6279C7957002AADC9 /* AddArtistViewModel.swift */; };
+		1D2D1BC9279C7F18002AADC9 /* SelectArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2D1BC8279C7F18002AADC9 /* SelectArtistView.swift */; };
+		1D2D1BCB279C7F28002AADC9 /* SelectArtistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2D1BCA279C7F28002AADC9 /* SelectArtistViewModel.swift */; };
 		1DEC9C3C2798198A0042B5D4 /* SongsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEC9C3B2798198A0042B5D4 /* SongsApp.swift */; };
 		1DEC9C3E2798198A0042B5D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEC9C3D2798198A0042B5D4 /* ContentView.swift */; };
 		1DEC9C402798198B0042B5D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DEC9C3F2798198B0042B5D4 /* Assets.xcassets */; };
@@ -28,6 +31,9 @@
 /* Begin PBXFileReference section */
 		1D2D1BC2279C67EE002AADC9 /* AddArtistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArtistView.swift; sourceTree = "<group>"; };
 		1D2D1BC4279C6CC7002AADC9 /* FavsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavsViewModel.swift; sourceTree = "<group>"; };
+		1D2D1BC6279C7957002AADC9 /* AddArtistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArtistViewModel.swift; sourceTree = "<group>"; };
+		1D2D1BC8279C7F18002AADC9 /* SelectArtistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectArtistView.swift; sourceTree = "<group>"; };
+		1D2D1BCA279C7F28002AADC9 /* SelectArtistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectArtistViewModel.swift; sourceTree = "<group>"; };
 		1DEC9C382798198A0042B5D4 /* Songs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Songs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DEC9C3B2798198A0042B5D4 /* SongsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsApp.swift; sourceTree = "<group>"; };
 		1DEC9C3D2798198A0042B5D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -135,6 +141,7 @@
 				1DEC9C6227982DE60042B5D4 /* RatingView.swift */,
 				1DEC9C5D279828410042B5D4 /* Add */,
 				1DEC9C5B279824610042B5D4 /* SongsView.swift */,
+				1D2D1BC4279C6CC7002AADC9 /* FavsViewModel.swift */,
 				1DEC9C64279844B20042B5D4 /* SongViewModel.swift */,
 			);
 			path = Songs;
@@ -162,7 +169,9 @@
 				1DEC9C5E279828500042B5D4 /* AddSongView.swift */,
 				1DEC9C662798473E0042B5D4 /* AddSongViewModel.swift */,
 				1D2D1BC2279C67EE002AADC9 /* AddArtistView.swift */,
-				1D2D1BC4279C6CC7002AADC9 /* FavsViewModel.swift */,
+				1D2D1BC6279C7957002AADC9 /* AddArtistViewModel.swift */,
+				1D2D1BC8279C7F18002AADC9 /* SelectArtistView.swift */,
+				1D2D1BCA279C7F28002AADC9 /* SelectArtistViewModel.swift */,
 			);
 			path = Add;
 			sourceTree = "<group>";
@@ -240,6 +249,7 @@
 				1DEC9C6327982DE60042B5D4 /* RatingView.swift in Sources */,
 				1DEC9C65279844B20042B5D4 /* SongViewModel.swift in Sources */,
 				1DEC9C482798198B0042B5D4 /* Songs.xcdatamodeld in Sources */,
+				1D2D1BC9279C7F18002AADC9 /* SelectArtistView.swift in Sources */,
 				1DEC9C672798473E0042B5D4 /* AddSongViewModel.swift in Sources */,
 				1DEC9C452798198B0042B5D4 /* DBManager.swift in Sources */,
 				1DEC9C3E2798198A0042B5D4 /* ContentView.swift in Sources */,
@@ -247,9 +257,11 @@
 				1DEC9C3C2798198A0042B5D4 /* SongsApp.swift in Sources */,
 				1D2D1BC5279C6CC7002AADC9 /* FavsViewModel.swift in Sources */,
 				1DEC9C5A279824510042B5D4 /* FavsView.swift in Sources */,
+				1D2D1BC7279C7957002AADC9 /* AddArtistViewModel.swift in Sources */,
 				1DEC9C53279823680042B5D4 /* TabBar.swift in Sources */,
 				1DEC9C5C279824610042B5D4 /* SongsView.swift in Sources */,
 				1D2D1BC3279C67EE002AADC9 /* AddArtistView.swift in Sources */,
+				1D2D1BCB279C7F28002AADC9 /* SelectArtistViewModel.swift in Sources */,
 				1DEC9C5F279828500042B5D4 /* AddSongView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

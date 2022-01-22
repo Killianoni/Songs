@@ -25,7 +25,7 @@ struct AddSongView: View {
 				
 				Section {
 					NavigationLink {
-						AddArtistView()
+						SelectArtistView()
 					} label: {
 						Label("Add artist", systemImage: "person.fill")
 					}
